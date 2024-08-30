@@ -10,7 +10,7 @@ addbtn.addEventListener("click",function add(){
     item.classList.add("list");
 
     let delBtn = document.createElement("button");
-    delBtn.innerText = "delete";
+    delBtn.innerHTML = '<i class="fa-solid fa-trash"></i>';
     delBtn.classList.add("delete");
    
     if(inp.value != ""){
