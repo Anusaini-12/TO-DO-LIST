@@ -13,27 +13,26 @@ h1{
 input{
     text-align: center;
     font-size: 1.2rem;
-    padding: 0.5rem 0rem;
+    padding: 0.65rem 0;
     font-weight: 600;
-    border: 1px solid transparent;
-    border-radius: 30px;
+    border: 2px solid rgb(186, 127, 186);
+    border-radius: 7px;
     margin-top: 1.5rem;
 }
 
 .lists{
-    width: 30%;
-    display: flex;
-    justify-content: center;
+    width: 35%;
     margin: auto; 
+    display: inline-block;
 }
 
 .reset{
     background-color: rgb(255, 166, 47);
     border: none;
-    padding: 0.75rem 1.2rem;
-    border-radius: 2rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.2rem;
     box-shadow: 0 8px 5px black;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -50,7 +49,7 @@ input{
     padding: 0.5rem 1rem;
     font-weight: 600;
     background-color: rgb(26, 83, 25);
-    border-radius: 30px ;
+    border-radius: 7px;
     border: none;
     box-shadow: 0 8px 5px black;
     color: #fff;
@@ -65,23 +64,40 @@ input{
 }
 
 .list{
-    border: 1px solid white;
-    background-color: black;
-    color: white;
+    max-width: 100%;
+    border: 2px solid white;
+    background-color: rgb(227, 184, 190);
+    color: black;
     font-size: 1.5rem;
-    padding: 0.5rem 6rem ;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    padding: 0.2rem 1.5rem;
+    font-family: "PT sans" ,sans-serif;
 }
 
+@media (width <= 600px){
+    .lists{
+        width: 60%;
+    }
+    .add{
+        margin-top: 12px;
+    }
+}
 .delete{
-    padding: 0.2rem 0.5rem;
-    background-color: rgb(156, 26, 26);
+    font-size: 1.2rem;
+    padding: 0.35rem 0.65rem;
+    background-color: rgb(117, 38, 38);
     border: none;
     border-radius: 0.2rem;
     color: #fff;
-    margin-left: 0.5rem;
+    transition: 0.3s ease-in-out;
 }
 
 .delete:hover{
-    border: 1px solid #fff;
+    transform: scale(1.05);
     cursor: pointer;
 }
